@@ -1,11 +1,19 @@
-package testPolimarphism;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Animal animal = new DOG();
-        animal.makeSound();
-        
-        Animal animal1 = new CAT();
-        animal1.makeSound();
+        Scanner in = new Scanner(System.in);
+
+        try {
+            System.out.println("Enter first number");
+            int firstNumber = in.nextInt();
+            System.out.println("Enter second number");
+            int secondNumber = in.nextInt();
+            System.out.println("Sum = " + firstNumber / secondNumber);
+            secondNumber =0;
+        } catch (Exception e) {
+            System.out.println("Cannot divide on zero");
+
+        }
     }
 }
